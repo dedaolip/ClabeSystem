@@ -5,10 +5,40 @@
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Welcome</div>
+                    <div class="panel-heading">Funcionários</div>
 
                     <div class="panel-body">
-                        <h1>Funcionarios</h1>
+
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Name</th>
+                                <th>Cargo</th>
+                                <th>Contato</th>
+                                <th>Ação</th>
+                            </tr>
+                            </thead>
+
+                            <tbody>
+                            <tr>
+                                <td>...</td>
+                                <td>...</td>
+                                <td>...</td>
+                                <td>...</td>
+                                <td>
+                                    <a><img src="img/funcionario_edit.png"></a>
+                                    <a><img src="img/funcionario_delete.png"></a>
+                                </td>
+                            </tr>
+                            </tbody>
+
+                        </table>
+
+                        <div class="col-lg-1">
+                            <a><img src="img/funcionario_add.png"><p style="text-align: center; color: black">Novo</p></a>
+                        </div>
+
                     </div>
                 </div>
             </div>
