@@ -21,4 +21,6 @@ Route::get('/home', 'HomeController@index');
 
 Route::get('/func', 'HomeController@func');
 
+Route::get('/create', 'HomeController@create');
+
 

@@ -32,5 +32,10 @@ class HomeController extends Controller
         return view('backend.funcionarios.principal');
     }
 
+    public function create()
+    {
+        return view('backend.funcionarios.create');
+    }
+
 
 }
