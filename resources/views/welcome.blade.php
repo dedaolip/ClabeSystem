@@ -1,45 +1,39 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Laravel</title>
+@extends('layouts.app')
 
-        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+@section('content')
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="panel panel-default">
+                <div class="panel-heading">Bem Vindo ao ClabeSystem</div>
 
-        <style>
-            html, body {
-                height: 100%;
-            }
+                <div class="panel-body">
+                    <div class="col-md-10 col-md-offset-1">
+                        <p class="col-md-10" style="font-weight: bold; font-size: 20pt; text-align: center">ClabeSystem</p>
+                    </div>
 
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-            }
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="col-md-2 col-md-offset-1">
+                            <img src="img/veiculo.png">
+                            <p>Veículos</p>
+                        </div>
+                        <div class="col-md-2 col-md-offset-1">
+                            <img src="img/motorista.png">
+                            <p>Motorista</p>
+                        </div>
+                        <div class="col-md-2 col-md-offset-1">
+                            <img src="img/provider.png">
+                            <p>Forneçedor</p>
+                        </div>
+                        <div class="col-md-2 col-md-offset-1">
+                            <img src="img/funcionario.png">
+                            <p>Funcionários</p>
+                        </div>
 
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
-
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
-
-            .title {
-                font-size: 96px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">Laravel 5</div>
+                    </div>
+                </div>
             </div>
         </div>
-    </body>
-</html>
+    </div>
+</div>
+@endsection
