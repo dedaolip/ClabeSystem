@@ -27,15 +27,19 @@
                             </div>
 
                             <div class="form-group col-lg-12">
-                                <div class="col-lg-3">
+                                <div class="col-lg-2">
+                                    <label class="control-label" for="cpf">CPF: </label>
+                                    <input class="form-control" type="text" name="cpf" value placeholder="ex.: 342.014.248.93">
+                                </div>
+                                <div class="col-lg-2">
                                     <label class="control-label" for="fone">Telefone: </label>
                                     <input class="form-control celphones" type="text" name="fone" value placeholder="ex.: (16)3984-2752">
                                 </div>
-                                <div class="col-lg-3">
-                                    <label class="control-label" for="celular">Data de Nascimento: </label>
+                                <div class="col-lg-2">
+                                    <label class="control-label" for="celular">Celular: </label>
                                     <input class="form-control celphones" type="text" name="celular" value placeholder="ex.: (16)99725-5743">
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="col-lg-6">
                                     <label class="control-label" for="cargo">Cargo: </label>
                                     <input class="form-control" type="text" name="cargo" value placeholder="ex.: Secretária">
                                 </div>
@@ -100,7 +104,7 @@
 
 
                             <div class="form-group">
-                                <div class="col-lg-10">
+                                <div class="col-lg-12">
                                     <button type="submit" class="btn btn-primary">Salvar</button>
                                     <button type="reset" class="btn">Limpar</button>
                                     <input type="hidden" name="_token" value="{{ csrf_token() }}">

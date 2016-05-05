@@ -28,11 +28,15 @@
 
                         <div class="form-group col-lg-12">
                             <div class="col-lg-3">
+                                <label class="control-label" for="cpf">CPF: </label>
+                                <input class="form-control" type="text" name="cpf" value placeholder="ex.: 342.014.248.93">
+                            </div>
+                            <div class="col-lg-3">
                                 <label class="control-label" for="fone">Telefone: </label>
                                 <input class="form-control celphones" type="text" name="fone" value placeholder="ex.: (16)3984-2752">
                             </div>
                             <div class="col-lg-3">
-                                <label class="control-label" for="celular">Data de Nascimento: </label>
+                                <label class="control-label" for="celular">Celular: </label>
                                 <input class="form-control celphones" type="text" name="celular" value placeholder="ex.: (16)99725-5743">
                             </div>
                         </div>
