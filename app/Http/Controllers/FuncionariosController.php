@@ -8,7 +8,7 @@ use App\Http\Requests;
 
 class FuncionariosController extends Controller
 {
-    public function func()
+    public function index()
     {
         return view('backend.funcionarios.principal');
     }

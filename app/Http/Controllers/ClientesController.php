@@ -8,7 +8,7 @@ use App\Http\Requests;
 
 class ClientesController extends Controller
 {
-    public function func()
+    public function index()
     {
         return view('backend.clientes.principal');
     }

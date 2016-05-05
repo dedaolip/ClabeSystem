@@ -19,11 +19,11 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('/funcionarios', 'FuncionariosController@func');
+Route::get('/funcionarios', 'FuncionariosController@index');
 
 Route::get('/funcionarios/create', 'FuncionariosController@create');
 
-Route::get('/clientes', 'ClientesController@func');
+Route::get('/clientes', 'ClientesController@index');
 
 Route::get('/clientes/create', 'ClientesController@create');
 
