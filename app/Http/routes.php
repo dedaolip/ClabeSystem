@@ -19,8 +19,8 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('/func', 'HomeController@func');
+Route::get('/func', 'FuncionariosController@func');
 
-Route::get('/create', 'HomeController@create');
+Route::get('/create', 'FuncionariosController@create');
 
 

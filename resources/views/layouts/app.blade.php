@@ -79,6 +79,25 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js" integrity="sha384-I6F5OKECLVtK/BL+8iSLDEHowSAfUo76ZL9+kGAgTRdiByINKJaqTPH/QVNS1VDb" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
+    <script src="<?= asset('app/assets/js/panelctrl.js');?>"></script>
+    <script src="<?= asset('js/jquery/jquery.mask.min-1.14.0.js');?>"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var SPMaskBehavior = function (val) {
+                        return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
+                    },
+                    spOptions = {
+                        onKeyPress: function(val, e, field, options) {
+                            field.mask(SPMaskBehavior.apply({}, arguments), options);
+                        }
+                    };
+
+            $('.celphones').mask(SPMaskBehavior, spOptions);
+            $('.date').mask('00/00/0000');
+            $('.cep').mask('00.000-000');
+            $('.money').mask('000.000.000.000.000,00', {reverse: true});
+        })
+    </script>
 </body>
 
 </html>
