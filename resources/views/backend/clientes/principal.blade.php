@@ -14,7 +14,6 @@
                         <tr>
                             <th>Id</th>
                             <th>Name</th>
-                            <th>Cargo</th>
                             <th>Contato</th>
                             <th>Ação</th>
                         </tr>
@@ -22,7 +21,6 @@
 
                         <tbody>
                         <tr>
-                            <td>...</td>
                             <td>...</td>
                             <td>...</td>
                             <td>...</td>
