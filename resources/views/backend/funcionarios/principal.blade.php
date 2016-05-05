@@ -27,8 +27,8 @@
                                 <td>...</td>
                                 <td>...</td>
                                 <td>
-                                    <a><img src="img/funcionario_edit.png"></a>
-                                    <a><img src="img/funcionario_delete.png"></a>
+                                    <a><img src="img/funcionario_edit.png" title="Editar"></a>
+                                    <a><img src="img/funcionario_delete.png" title="Deletar"></a>
                                 </td>
                             </tr>
                             </tbody>
@@ -36,7 +36,7 @@
                         </table>
 
                         <div class="col-lg-1">
-                            <a href="{{ url('/create') }}"><img src="img/funcionario_add.png"><p style="text-align: center; color: black">Novo</p></a>
+                            <a href="{{ url('/create') }}"><img src="img/funcionario_add.png" title="Novo"><p style="text-align: center; color: black"></p></a>
                         </div>
 
                     </div>
