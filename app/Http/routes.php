@@ -31,4 +31,8 @@ Route::get('/veiculos', 'FuncionariosController@index');
 
 Route::get('/veiculos/create', 'FuncionariosController@create');
 
+Route::get('/viagens', 'ViagensController@index');
+
+Route::get('/viagens/create', 'ViagensController@create');
+
 

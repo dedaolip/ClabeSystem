@@ -18,7 +18,10 @@
                         </div>
                         <div class="col-md-2 col-md-offset-1">
                             <a href="{{ url('/funcionarios') }}" style="color: black"><img src="img/funcionario.png" title="Funcionários"></a>
+                        </div><div class="col-md-2 col-md-offset-1">
+                            <a href="{{ url('/viagens') }}" style="color: black"><img src="img/aviao.png" title="Viagens"></a>
                         </div>
+
 
                     </div>
                 </div>
