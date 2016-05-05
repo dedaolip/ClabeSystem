@@ -36,7 +36,7 @@
                     </table>
 
                     <div class="col-lg-1">
-                        <a href="{{ url('/create') }}"><img src="img/funcionario_add.png" title="Novo"><p style="text-align: center; color: black"></p></a>
+                        <a href="{{ url('/clientes/create') }}"><img src="img/funcionario_add.png" title="Novo"><p style="text-align: center; color: black"></p></a>
                     </div>
 
                 </div>

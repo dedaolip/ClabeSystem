@@ -19,8 +19,11 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('/func', 'FuncionariosController@func');
+Route::get('/funcionarios', 'FuncionariosController@func');
 
-Route::get('/create', 'FuncionariosController@create');
+Route::get('/funcionarios/create', 'FuncionariosController@create');
 
+Route::get('/clientes', 'ClientesController@func');
+
+Route::get('/clientes/create', 'ClientesController@create');
 

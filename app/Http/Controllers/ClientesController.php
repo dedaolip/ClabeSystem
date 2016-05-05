@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
-class ClintesController extends Controller
+class ClientesController extends Controller
 {
     public function func()
     {
