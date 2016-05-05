@@ -14,9 +14,6 @@
                             <a><img src="img/veiculo.png" title="veículos"></a>
                         </div>
                         <div class="col-md-2 col-md-offset-1">
-                            <a><img src="img/motorista.png" title="Motoristas"></a>
-                        </div>
-                        <div class="col-md-2 col-md-offset-1">
                             <a href="{{ url('/clientes') }}" style="color: black"><img src="img/provider.png" title="Clientes"></a>
                         </div>
                         <div class="col-md-2 col-md-offset-1">
