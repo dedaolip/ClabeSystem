@@ -27,3 +27,8 @@ Route::get('/clientes', 'ClientesController@index');
 
 Route::get('/clientes/create', 'ClientesController@create');
 
+Route::get('/veiculos', 'FuncionariosController@index');
+
+Route::get('/veiculos/create', 'FuncionariosController@create');
+
+

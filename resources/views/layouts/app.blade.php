@@ -94,6 +94,8 @@
 
             $('.celphones').mask(SPMaskBehavior, spOptions);
             $('.date').mask('00/00/0000');
+            $('.placa').mask('AAA-0000');
+            $('.ano').mask('0000');
             $('.cep').mask('00.000-000');
             $('.money').mask('000.000.000.000.000,00', {reverse: true});
         })
