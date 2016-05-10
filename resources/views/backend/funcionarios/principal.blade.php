@@ -33,8 +33,8 @@
                                     <td><?php echo $funcionario->cargo->nome ?></td>
                                     <td><?php echo $funcionario->pessoa->fone ?></td>
                                     <td>
-                                        <a><img src="img/funcionario_edit.png" title="Editar"></a>
-                                        <a><img src="img/funcionario_delete.png" title="Deletar"></a>
+                                        <a href="{!! route('func.edit', ['id' => $funcionario->id]) !!}"><img src="img/funcionario_edit.png" title="Editar"></a>
+                                        <a href="{!! route('func.destroy', ['id' => $funcionario->id]) !!}"><img src="img/funcionario_delete.png" title="Deletar"></a>
                                     </td>
                                 </tr>
                             <?php endforeach ;?>

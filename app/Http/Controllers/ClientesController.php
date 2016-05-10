@@ -26,17 +26,17 @@ class ClientesController extends Controller
         return view('backend.clientes.create');
     }
 
-    public function edit($id)
-    {
-        $cliente = Cliente::find($id);
-        return view('backend.clientes.edit', compact('cliente'));
-    }
-
     public function store(Request $request)
     {
         $pessoa = Pessoa::create($request->all());
         Cliente::create(['pessoa_id' => $pessoa->id]);
         return redirect(route('cli.index'));
+    }
+
+    public function edit($id)
+    {
+        $cliente = Cliente::find($id);
+        return view('backend.clientes.edit', compact('cliente'));
     }
 
     public function update(Request $request, $id)
