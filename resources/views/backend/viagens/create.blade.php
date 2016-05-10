@@ -12,17 +12,29 @@
                         &nbsp;&nbsp;Adicionar Viagem
                     </div>
 
-                    <form id="uCustomerForm" method="post" class="form-horizontal ng-pristine ng-valid" name="uCustomerForm" role="form">
+                    <form id="uCustomerForm" action="{!! route('via.store') !!}" method="post" class="form-horizontal ng-pristine ng-valid" name="uCustomerForm" role="form">
 
                         <div class="panel-body col-md-12">
                             <div class="form-group col-lg-12">
                                 <div class="col-lg-6">
-                                    <label class="control-label" for="motorista">Motorista: </label>
-                                    <input class="form-control" type="text" name="motorista" value placeholder="ex.: Roberto">
+                                    <label class="control-label" for="motorista_id">Motorista: </label>
+                                    <select class="form-control" name="motorista_id">
+                                        <?php foreach($motoristas as $motorista): ?>
+                                            <?php if ($motorista->cargo_id == '3'){
+                                            echo "<option value=$motorista->id>";
+                                            echo $motorista->pessoa->nome;
+                                            echo "</option>";
+                                        };?>
+                                        <?php endforeach ?>
+                                    </select>
                                 </div>
                                 <div class="col-lg-2">
-                                    <label class="control-label" for="veiculo">Veículo: </label>
-                                    <input class="form-control" type="text" name="veiculo" value placeholder="ex.: a25s4ds47">
+                                    <label class="control-label" for="veiculo_id">Veículo: </label>
+                                    <select class="form-control" name="veiculo_id">
+                                        <?php foreach($veiculos as $veiculo): ?>
+                                            <option value="<?php echo $veiculo->id ?>"><?php echo $veiculo->placa ?></option>
+                                        <?php endforeach;?>
+                                    </select>
                                 </div>
                             </div>
 
@@ -35,27 +47,27 @@
                                     <label class="control-label" for="destino">Destino: </label>
                                     <input class="form-control" type="text" name="destino" value placeholder="ex.: Olímpia - SP">
                                 </div>
-                                <div class="col-lg-2">
+                                <div class="col-lg-3">
                                     <label class="control-label" for="data_partida">Data de Partida: </label>
-                                    <input class="form-control date" type="text" name="data_partida" value placeholder="ex.: 25/04/2016">
+                                    <input class="form-control" type="date" name="data_partida">
                                 </div>
                             </div>
 
                             <div class="form-group col-md-12">
                                 <div class="col-lg-4">
-                                    <label class="control-label" for="tempo_viage">Tempo de Viagem: </label>
-                                    <input class="form-control ano" type="text" name="tempo_viage" value placeholder="ex.: 5" title="Tempo em Horas">
+                                    <label class="control-label" for="tempo">Tempo de Viagem: </label>
+                                    <input class="form-control ano" type="text" name="tempo" value placeholder="ex.: 5" title="Tempo em Horas">
                                 </div>
                                 <div class="col-lg-4">
-                                    <label class="control-label" for="previsao_chegada">Previsão de Chegada: </label>
-                                    <input class="form-control date" type="text" name="previsao_chegada" value placeholder="ex.: 25/04/2016">
+                                    <label class="control-label" for="data_chegada">Previsão de Chegada: </label>
+                                    <input class="form-control" type="date" name="data_chegada">
                                 </div>
                             </div>
 
                             <div class="form-group col-md-12">
                                 <div class="col-lg-5">
-                                    <label class="control-label" for="previsao_chegada">Detalhes da Viagem: </label>
-                                    <textarea class="form-control date" name="previsao_chegada" style="height: 100px" maxlength="255"></textarea>
+                                    <label class="control-label" for="detalhes">Detalhes da Viagem: </label>
+                                    <textarea class="form-control date" name="detalhes" style="height: 100px" maxlength="255"></textarea>
                                 </div>
                             </div>
 

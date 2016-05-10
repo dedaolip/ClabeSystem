@@ -50,6 +50,10 @@ Route::group(['prefix' => 'veiculos'], function() {
 Route::group(['prefix' => 'viagens'], function() {
     Route::get('',					['as' => 'via.index',	'uses' => 'ViagensController@index']);
     Route::get('create', 			['as' => 'via.create',	'uses' => 'ViagensController@create']);
+    Route::post('store', 			['as' => 'via.store',	'uses' => 'ViagensController@store']);
+    Route::get('{id}/edit', 	   	['as' => 'via.edit',    'uses' => 'ViagensController@edit']);
+    Route::get('{id}/destroy', 		['as' => 'via.destroy', 'uses' => 'ViagensController@destroy']);
+    Route::put('update/{clientes}', ['as' => 'via.update',  'uses' => 'ViagensController@update']);
 });
 
 
