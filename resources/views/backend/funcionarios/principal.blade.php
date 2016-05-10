@@ -26,16 +26,18 @@
                             </thead>
 
                             <tbody>
-                            <tr>
-                                <td>...</td>
-                                <td>...</td>
-                                <td>...</td>
-                                <td>...</td>
-                                <td>
-                                    <a><img src="img/funcionario_edit.png" title="Editar"></a>
-                                    <a><img src="img/funcionario_delete.png" title="Deletar"></a>
-                                </td>
-                            </tr>
+                            <?php foreach($funcionarios as $funcionario): ?>
+                                <tr>
+                                    <td><?php echo $funcionario->id ?></td>
+                                    <td><?php echo $funcionario->pessoa->nome ?></td>
+                                    <td><?php echo $funcionario->cargo->nome ?></td>
+                                    <td><?php echo $funcionario->pessoa->fone ?></td>
+                                    <td>
+                                        <a><img src="img/funcionario_edit.png" title="Editar"></a>
+                                        <a><img src="img/funcionario_delete.png" title="Deletar"></a>
+                                    </td>
+                                </tr>
+                            <?php endforeach ;?>
                             </tbody>
 
                         </table>
