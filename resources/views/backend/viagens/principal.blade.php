@@ -42,7 +42,7 @@
                                     <td><?php echo $viagem->tempo?></td>
                                     <td><?php echo $viagem->data_chegada?></td>
                                     <td>
-                                        <a><img src="img/funcionario_edit.png" title="Editar"></a>
+                                        <a href="{!! route('via.edit', ['id' => $viagem->id]) !!}"><img src="img/funcionario_edit.png" title="Editar"></a>
                                         <a href="{!! route('via.destroy', ['id' => $viagem->id]) !!}"><img src="img/funcionario_delete.png" title="Deletar"></a>
                                     </td>
                                 </tr>

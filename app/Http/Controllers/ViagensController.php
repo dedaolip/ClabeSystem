@@ -38,8 +38,10 @@ class ViagensController extends Controller
 
     public function edit($id)
     {
+        $motoristas = Funcionario::all();
+        $veiculos = Veiculo::all();
         $viagem = Viagem::find($id);
-        return view('backend.viagem.edit', compact('viagem'));
+        return view('backend.viagens.edit', ['motoristas'=>$motoristas, 'veiculos'=>$veiculos, 'viagem'=>$viagem]);
     }
 
     public function update(Request $request, $id)
