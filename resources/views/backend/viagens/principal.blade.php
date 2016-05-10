@@ -43,7 +43,7 @@
                                     <td><?php echo $viagem->data_chegada?></td>
                                     <td>
                                         <a><img src="img/funcionario_edit.png" title="Editar"></a>
-                                        <a><img src="img/funcionario_delete.png" title="Deletar"></a>
+                                        <a href="{!! route('via.destroy', ['id' => $viagem->id]) !!}"><img src="img/funcionario_delete.png" title="Deletar"></a>
                                     </td>
                                 </tr>
                             <?php endforeach;?>

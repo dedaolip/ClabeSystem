@@ -38,27 +38,24 @@ class ViagensController extends Controller
 
     public function edit($id)
     {
-        $cliente = Cliente::find($id);
-        return view('backend.clientes.edit', compact('cliente'));
+        $viagem = Viagem::find($id);
+        return view('backend.viagem.edit', compact('viagem'));
     }
 
     public function update(Request $request, $id)
     {
-        $cliente = Cliente::find($id);
-        if($cliente->update($request->all())) {
-            Pessoa::find($cliente->pessoa_id)->update($request->all());
+        $viagem = Viagem::find($id);
+        if($viagem->update($request->all())) {
+            Viagem::find($viagem->id)->update($request->all());
         } else {
             // @TODO: FELIPE: implementar exceção
         }
-        return redirect(route('cli.index'));
+        return redirect(route('via.index'));
     }
 
     public function destroy($id)
     {
-        $cliente = Cliente::find($id);
-        if($cliente->delete()){
-            Pessoa::find($id)->where('id', $cliente->pessoa_id)->delete();
-        }
-        return redirect(route('cli.index'));
+        Viagem::find($id)->delete();
+        return redirect(route('via.index'));
     }
 }
