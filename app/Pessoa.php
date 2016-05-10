@@ -19,4 +19,9 @@ class Pessoa extends Model
             'cep',
             'data_nasc'
         ];
+
+    public function clientes()
+    {
+        return $this->hasOne('App\Cliente');
+    }
 }
