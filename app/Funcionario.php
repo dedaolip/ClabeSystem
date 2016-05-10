@@ -21,4 +21,9 @@ class Funcionario extends Model
     {
         return $this->belongsTo(Cargo::class);
     }
+
+    public function veiculo()
+    {
+        return $this->hasOne('App\Veiculo');
+    }
 }
