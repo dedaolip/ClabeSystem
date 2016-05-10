@@ -25,15 +25,17 @@
                         </thead>
 
                         <tbody>
+                        <?php foreach($clientes as $cliente): ?>
                         <tr>
-                            <td>...</td>
-                            <td>...</td>
-                            <td>...</td>
+                            <td><?php echo $cliente->id;?></td>
+                            <td><?php echo $cliente->pessoa->nome;?></td>
+                            <td><?php echo $cliente->pessoa->fone;?></td>
                             <td>
                                 <a><img src="img/funcionario_edit.png" title="Editar"></a>
                                 <a><img src="img/funcionario_delete.png" title="Deletar"></a>
                             </td>
                         </tr>
+                        <?php endforeach;?>
                         </tbody>
 
                     </table>

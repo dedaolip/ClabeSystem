@@ -17,7 +17,8 @@ class ClientesController extends Controller
 
     public function index()
     {
-        return view('backend.clientes.principal');
+        $clientes = Cliente::all();
+        return view('backend.clientes.principal', ['clientes' => $clientes]);
     }
 
     public function create()
