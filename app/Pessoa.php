@@ -24,4 +24,11 @@ class Pessoa extends Model
     {
         return $this->hasOne('App\Cliente');
     }
+
+    public function funcionarios()
+    {
+        return $this->hasOne('App\Funcionario');
+    }
+
+
 }
