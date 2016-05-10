@@ -30,6 +30,9 @@ Route::group(['prefix' => 'clientes'], function() {
     Route::get('',					['as' => 'cli.index',	'uses' => 'ClientesController@index']);
     Route::get('create', 			['as' => 'cli.create',	'uses' => 'ClientesController@create']);
     Route::post('store', 			['as' => 'cli.store',	'uses' => 'ClientesController@store']);
+    Route::get('{id}/edit', 	   	['as' => 'cli.edit',    'uses' => 'ClientesController@edit']);
+    Route::get('{id}/destroy', 		['as' => 'cli.destroy', 'uses' => 'ClientesController@destroy']);
+    Route::put('update/{clientes}', ['as' => 'cli.update',  'uses' => 'ClientesController@update']);
 });
 
 Route::group(['prefix' => 'veiculos'], function() {

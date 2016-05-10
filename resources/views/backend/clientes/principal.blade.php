@@ -31,8 +31,8 @@
                             <td><?php echo $cliente->pessoa->nome;?></td>
                             <td><?php echo $cliente->pessoa->fone;?></td>
                             <td>
-                                <a><img src="img/funcionario_edit.png" title="Editar"></a>
-                                <a><img src="img/funcionario_delete.png" title="Deletar"></a>
+                                <a href="{!! route('cli.edit', ['id' => $cliente->id]) !!}"><img src="img/funcionario_edit.png" title="Editar"></a>
+                                <a href="{!! route('cli.destroy', ['id' => $cliente->id]) !!}"><img src="img/funcionario_delete.png" title="Deletar"></a>
                             </td>
                         </tr>
                         <?php endforeach;?>
