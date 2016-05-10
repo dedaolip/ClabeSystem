@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <div class="col-md-10 col-md-offset-1">
+            <div class="col-md-12 col-md-offset-1">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <a href="javascript:history.back(-1);" class="btn btn-default btn-sm" data-toggle="tooltip" data-placement="top" title="Voltar">
@@ -30,20 +30,23 @@
                             </thead>
 
                             <tbody>
-                            <tr>
-                                <td>...</td>
-                                <td>...</td>
-                                <td>...</td>
-                                <td>...</td>
-                                <td>...</td>
-                                <td>...</td>
-                                <td>...</td>
-                                <td>...</td>
-                                <td>
-                                    <a><img src="img/funcionario_edit.png" title="Editar"></a>
-                                    <a><img src="img/funcionario_delete.png" title="Deletar"></a>
-                                </td>
-                            </tr>
+                            <?php foreach($viagens as $viagem): ?>
+                                <?php $motorista = \App\Funcionario::find($viagem->motorista_id);?>
+                                <tr>
+                                    <td><?php echo $viagem->id?></td>
+                                    <td><?php echo $viagem->veiculo->placa?></td>
+                                    <td><?php echo $motorista->pessoa->nome?></td>
+                                    <td><?php echo $viagem->destino?></td>
+                                    <td><?php echo $viagem->origem?></td>
+                                    <td><?php echo $viagem->data_partida?></td>
+                                    <td><?php echo $viagem->tempo?></td>
+                                    <td><?php echo $viagem->data_chegada?></td>
+                                    <td>
+                                        <a><img src="img/funcionario_edit.png" title="Editar"></a>
+                                        <a><img src="img/funcionario_delete.png" title="Deletar"></a>
+                                    </td>
+                                </tr>
+                            <?php endforeach;?>
                             </tbody>
 
                         </table>

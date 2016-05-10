@@ -19,4 +19,11 @@ class Veiculo extends Model
     {
         return $this->belongsTo(Funcionario::class);
     }
+
+    public function viagem()
+    {
+        return $this->hasOne('App\Viagem');
+    }
+
+
 }

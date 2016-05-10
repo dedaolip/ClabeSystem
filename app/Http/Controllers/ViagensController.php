@@ -19,7 +19,8 @@ class ViagensController extends Controller
 
     public function index()
     {
-        return view('backend.viagens.principal');
+        $viagens = Viagem::all();
+        return view('backend.viagens.principal', ['viagens'=>$viagens]);
     }
 
     public function create()

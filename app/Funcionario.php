@@ -27,7 +27,7 @@ class Funcionario extends Model
         return $this->hasOne('App\Veiculo');
     }
 
-    public function funcionarios()
+    public function viagem()
     {
         return $this->hasOne('App\Viagem');
     }

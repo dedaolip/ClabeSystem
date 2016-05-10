@@ -24,4 +24,11 @@ class Viagem extends Model
     {
         return $this->belongsTo(Funcionario::class);
     }
+
+    public function veiculo()
+    {
+        return $this->belongsTo(Veiculo::class);
+    }
+
+
 }
