@@ -28,6 +28,7 @@ Route::group(['prefix' => 'funcionarios'], function() {
 Route::group(['prefix' => 'clientes'], function() {
     Route::get('',					['as' => 'cli.index',	'uses' => 'ClientesController@index']);
     Route::get('create', 			['as' => 'cli.create',	'uses' => 'ClientesController@create']);
+    Route::post('store', 			['as' => 'cli.store',	'uses' => 'ClientesController@store']);
 });
 
 Route::group(['prefix' => 'veiculos'], function() {

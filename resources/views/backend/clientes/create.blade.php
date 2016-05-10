@@ -12,7 +12,7 @@
                     &nbsp;&nbsp;Adicionar Novo Cliente
                 </div>
 
-                <form id="uCustomerForm" method="post" class="form-horizontal ng-pristine ng-valid" name="uCustomerForm" role="form">
+                <form id="uCustomerForm" action="{!! route('cli.store') !!}" method="post" class="form-horizontal ng-pristine ng-valid" name="uCustomerForm" role="form">
 
                     <div class="panel-body col-md-12">
                         <div class="form-group col-lg-12">
@@ -36,8 +36,8 @@
                                 <input class="form-control celphones" type="text" name="fone" value placeholder="ex.: (16)3984-2752">
                             </div>
                             <div class="col-lg-3">
-                                <label class="control-label" for="celular">Celular: </label>
-                                <input class="form-control celphones" type="text" name="celular" value placeholder="ex.: (16)99725-5743">
+                                <label class="control-label" for="cel">Celular: </label>
+                                <input class="form-control celphones" type="text" name="cel" value placeholder="ex.: (16)99725-5743">
                             </div>
                         </div>
 
