@@ -23,6 +23,7 @@ Route::get('/home', 'HomeController@index');
 Route::group(['prefix' => 'funcionarios'], function() {
     Route::get('',					['as' => 'func.index',	'uses' => 'FuncionariosController@index']);
     Route::get('create', 			['as' => 'func.create',	'uses' => 'FuncionariosController@create']);
+    Route::post('store', 			['as' => 'func.store',	'uses' => 'FuncionariosController@store']);
 });
 
 Route::group(['prefix' => 'clientes'], function() {

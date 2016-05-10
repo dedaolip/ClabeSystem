@@ -12,7 +12,7 @@
                         &nbsp;&nbsp;Adicionar Novo Funcionário
                     </div>
 
-                    <form id="uCustomerForm" method="post" class="form-horizontal ng-pristine ng-valid" name="uCustomerForm" role="form">
+                    <form id="uCustomerForm" action="{!! route('func.store') !!}" method="post" class="form-horizontal ng-pristine ng-valid" name="uCustomerForm" role="form">
 
                         <div class="panel-body col-md-12">
                             <div class="form-group col-lg-12">
@@ -40,8 +40,13 @@
                                     <input class="form-control celphones" type="text" name="celular" value placeholder="ex.: (16)99725-5743">
                                 </div>
                                 <div class="col-lg-6">
-                                    <label class="control-label" for="cargo">Cargo: </label>
-                                    <input class="form-control" type="text" name="cargo" value placeholder="ex.: Secretária">
+                                    <label class="control-label" for="cargo_id">Cargo: </label>
+                                    <select class="form-control" name="cargo_id">
+                                        <option value="0">--Escolha o Cargo--</option>
+                                        <?php foreach($cargos as $cargo): ?>
+                                            <option value="<?php echo $cargo->id?>"><?php echo $cargo->nome?></option>
+                                        <?php endforeach;?>
+                                    </select>
                                 </div>
                             </div>
 

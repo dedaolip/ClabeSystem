@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Cargo;
+use App\Pessoa;
 use App\Funcionario;
 use Illuminate\Http\Request;
 
@@ -17,11 +19,21 @@ class FuncionariosController extends Controller
     public function index()
     {
         $funcionarios = Funcionario::all();
+
         return view('backend.funcionarios.principal', ['funcionarios' => $funcionarios]);
     }
 
     public function create()
     {
-        return view('backend.funcionarios.create');
+        $cargos = Cargo::all();
+        return view('backend.funcionarios.create', ['cargos' => $cargos]);
+    }
+
+    public function store(Request $request)
+    {
+        //dd($request->cargo_id);
+        $pessoa = Pessoa::create($request->all());
+        Funcionario::create(['pessoa_id' => $pessoa->id, 'cargo_id' => $request->cargo_id]);
+        return redirect(route('func.index'));
     }
 }
