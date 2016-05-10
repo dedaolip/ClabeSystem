@@ -5,7 +5,12 @@
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Funcion·rios</div>
+                    <div class="panel-heading">
+                        <a href="javascript:history.back(-1);" class="btn btn-default btn-sm" data-toggle="tooltip" data-placement="top" title="Voltar">
+                            <i class="glyphicon glyphicon-chevron-left"></i>
+                        </a>
+                        &nbsp;&nbsp;Funcion√°rio
+                    </div>
 
                     <div class="panel-body">
 
@@ -16,7 +21,7 @@
                                 <th>Name</th>
                                 <th>Cargo</th>
                                 <th>Contato</th>
-                                <th>AÁ„o</th>
+                                <th>A√ß√£o</th>
                             </tr>
                             </thead>
 
@@ -36,7 +41,7 @@
                         </table>
 
                         <div class="col-lg-1">
-                            <a href="{{ url('/funcionarios/create') }}"><img src="img/funcionario_add.png" title="Novo"><p style="text-align: center; color: black"></p></a>
+                            <a href="{!! route('func.create') !!}"><img src="img/funcionario_add.png" title="Novo"><p style="text-align: center; color: black"></p></a>
                         </div>
 
                     </div>

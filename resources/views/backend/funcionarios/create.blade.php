@@ -9,7 +9,7 @@
                         <a href="javascript:history.back(-1);" class="btn btn-default btn-sm" data-toggle="tooltip" data-placement="top" title="Voltar">
                             <i class="glyphicon glyphicon-chevron-left"></i>
                         </a>
-                        &nbsp;&nbsp;Adicionar Novo Funcion·rio
+                        &nbsp;&nbsp;Adicionar Novo Funcion√°rio
                     </div>
 
                     <form id="uCustomerForm" method="post" class="form-horizontal ng-pristine ng-valid" name="uCustomerForm" role="form">
@@ -18,7 +18,7 @@
                             <div class="form-group col-lg-12">
                                 <div class="col-lg-8">
                                     <label class="control-label" for="nome">Nome: </label>
-                                    <input class="form-control" type="text" name="nome" value placeholder="ex.: Maria das GraÁas">
+                                    <input class="form-control" type="text" name="nome" value placeholder="ex.: Maria das Gra√ßas">
                                 </div>
                                 <div class="col-lg-4">
                                     <label class="control-label" for="data_nasc">Data de Nascimento: </label>
@@ -41,13 +41,13 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <label class="control-label" for="cargo">Cargo: </label>
-                                    <input class="form-control" type="text" name="cargo" value placeholder="ex.: Secret·ria">
+                                    <input class="form-control" type="text" name="cargo" value placeholder="ex.: Secret√°ria">
                                 </div>
                             </div>
 
                             <div class="form-group col-lg-12">
                                 <div class="col-lg-5">
-                                    <label class="control-label" for="endereco">EndereÁo: </label>
+                                    <label class="control-label" for="endereco">Endere√ßo: </label>
                                     <input class="form-control" type="text" name="endereco" value placeholder="ex.: Rua: Manoel Prado, 246">
                                 </div>
                                 <div class="col-lg-4">
@@ -63,7 +63,7 @@
                             <div class="form-group col-lg-12">
                                 <div class="col-lg-5">
                                     <label class="control-label" for="cidade">Cidade: </label>
-                                    <input class="form-control" type="text" name="cidade" value placeholder="ex.: Rua: S„o Sim„o">
+                                    <input class="form-control" type="text" name="cidade" value placeholder="ex.: Rua: S√£o Sim√£o">
                                 </div>
                                 <div class="col-lg-3">
                                     <label class="control-label" for="uf">Estado: </label> <br/>

@@ -9,7 +9,7 @@
                         <a href="javascript:history.back(-1);" class="btn btn-default btn-sm" data-toggle="tooltip" data-placement="top" title="Voltar">
                             <i class="glyphicon glyphicon-chevron-left"></i>
                         </a>
-                        &nbsp;&nbsp;Adicionar Novo VeÌculo
+                        &nbsp;&nbsp;Adicionar Novo Ve√≠culo
                     </div>
 
                     <form id="uCustomerForm" method="post" class="form-horizontal ng-pristine ng-valid" name="uCustomerForm" role="form">
@@ -17,8 +17,8 @@
                         <div class="panel-body col-md-12">
                             <div class="form-group col-lg-12">
                                 <div class="col-lg-6">
-                                    <label class="control-label" for="responsavel_id">Funcion·rio Respons·vel: </label>
-                                    <input class="form-control" type="text" name="responsavel_id" value placeholder="ex.: Maria das GraÁas">
+                                    <label class="control-label" for="responsavel_id">Funcion√°rio Respons√°vel: </label>
+                                    <input class="form-control" type="text" name="responsavel_id" value placeholder="ex.: Maria das Gra√ßas">
                                 </div>
                                 <div class="col-lg-4">
                                     <label class="control-label" for="placa">Placa: </label>

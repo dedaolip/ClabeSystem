@@ -19,20 +19,25 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('/funcionarios', 'FuncionariosController@index');
 
-Route::get('/funcionarios/create', 'FuncionariosController@create');
+Route::group(['prefix' => 'funcionarios'], function() {
+    Route::get('',					['as' => 'func.index',	'uses' => 'FuncionariosController@index']);
+    Route::get('create', 			['as' => 'func.create',	'uses' => 'FuncionariosController@create']);
+});
 
-Route::get('/clientes', 'ClientesController@index');
+Route::group(['prefix' => 'clientes'], function() {
+    Route::get('',					['as' => 'cli.index',	'uses' => 'ClientesController@index']);
+    Route::get('create', 			['as' => 'cli.create',	'uses' => 'ClientesController@create']);
+});
 
-Route::get('/clientes/create', 'ClientesController@create');
+Route::group(['prefix' => 'veiculos'], function() {
+    Route::get('',					['as' => 'vei.index',	'uses' => 'VeiculosController@index']);
+    Route::get('create', 			['as' => 'vei.create',	'uses' => 'VeiculosController@create']);
+});
 
-Route::get('/veiculos', 'FuncionariosController@index');
-
-Route::get('/veiculos/create', 'FuncionariosController@create');
-
-Route::get('/viagens', 'ViagensController@index');
-
-Route::get('/viagens/create', 'ViagensController@create');
+Route::group(['prefix' => 'viagens'], function() {
+    Route::get('',					['as' => 'via.index',	'uses' => 'ViagensController@index']);
+    Route::get('create', 			['as' => 'via.create',	'uses' => 'ViagensController@create']);
+});
 
 

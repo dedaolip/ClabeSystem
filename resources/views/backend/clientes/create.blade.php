@@ -18,7 +18,7 @@
                         <div class="form-group col-lg-12">
                             <div class="col-lg-8">
                                 <label class="control-label" for="nome">Nome: </label>
-                                <input class="form-control" type="text" name="nome" value placeholder="ex.: Maria das Graças">
+                                <input class="form-control" type="text" name="nome" value placeholder="ex.: Maria das GraÃ§as">
                             </div>
                             <div class="col-lg-4">
                                 <label class="control-label" for="data_nasc">Data de Nascimento: </label>
@@ -43,7 +43,7 @@
 
                         <div class="form-group col-lg-12">
                             <div class="col-lg-5">
-                                <label class="control-label" for="endereco">Endereço: </label>
+                                <label class="control-label" for="endereco">EndereÃ§o: </label>
                                 <input class="form-control" type="text" name="endereco" value placeholder="ex.: Rua: Manoel Prado, 246">
                             </div>
                             <div class="col-lg-4">
@@ -59,7 +59,7 @@
                         <div class="form-group col-lg-12">
                             <div class="col-lg-5">
                                 <label class="control-label" for="cidade">Cidade: </label>
-                                <input class="form-control" type="text" name="cidade" value placeholder="ex.: Rua: São Simão">
+                                <input class="form-control" type="text" name="cidade" value placeholder="ex.: Rua: SÃ£o SimÃ£o">
                             </div>
                             <div class="col-lg-3">
                                 <label class="control-label" for="uf">Estado: </label> <br/>

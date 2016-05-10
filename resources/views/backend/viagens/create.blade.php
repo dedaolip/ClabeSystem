@@ -21,7 +21,7 @@
                                     <input class="form-control" type="text" name="motorista" value placeholder="ex.: Roberto">
                                 </div>
                                 <div class="col-lg-2">
-                                    <label class="control-label" for="veiculo">VeÌculo: </label>
+                                    <label class="control-label" for="veiculo">Ve√≠culo: </label>
                                     <input class="form-control" type="text" name="veiculo" value placeholder="ex.: a25s4ds47">
                                 </div>
                             </div>
@@ -29,11 +29,11 @@
                             <div class="form-group col-md-12">
                                 <div class="col-lg-4">
                                     <label class="control-label" for="origem">Origem: </label>
-                                    <input class="form-control" type="text" name="origem" value placeholder="ex.: S„o Sim„o - SP">
+                                    <input class="form-control" type="text" name="origem" value placeholder="ex.: S√£o Sim√£o - SP">
                                 </div>
                                 <div class="col-lg-4">
                                     <label class="control-label" for="destino">Destino: </label>
-                                    <input class="form-control" type="text" name="destino" value placeholder="ex.: OlÌmpia - SP">
+                                    <input class="form-control" type="text" name="destino" value placeholder="ex.: Ol√≠mpia - SP">
                                 </div>
                                 <div class="col-lg-2">
                                     <label class="control-label" for="data_partida">Data de Partida: </label>
@@ -47,7 +47,7 @@
                                     <input class="form-control ano" type="text" name="tempo_viage" value placeholder="ex.: 5" title="Tempo em Horas">
                                 </div>
                                 <div class="col-lg-4">
-                                    <label class="control-label" for="previsao_chegada">Previs„o de Chegada: </label>
+                                    <label class="control-label" for="previsao_chegada">Previs√£o de Chegada: </label>
                                     <input class="form-control date" type="text" name="previsao_chegada" value placeholder="ex.: 25/04/2016">
                                 </div>
                             </div>

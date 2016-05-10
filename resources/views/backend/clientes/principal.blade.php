@@ -5,7 +5,12 @@
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
             <div class="panel panel-default">
-                <div class="panel-heading">Clientes</div>
+                <div class="panel-heading">
+                    <a href="javascript:history.back(-1);" class="btn btn-default btn-sm" data-toggle="tooltip" data-placement="top" title="Voltar">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                    </a>
+                    &nbsp;&nbsp;Cliente
+                </div>
 
                 <div class="panel-body">
 
@@ -15,7 +20,7 @@
                             <th>Id</th>
                             <th>Name</th>
                             <th>Contato</th>
-                            <th>Ação</th>
+                            <th>AÃ§Ã£o</th>
                         </tr>
                         </thead>
 
@@ -34,7 +39,7 @@
                     </table>
 
                     <div class="col-lg-1">
-                        <a href="{{ url('/clientes/create') }}"><img src="img/funcionario_add.png" title="Novo"><p style="text-align: center; color: black"></p></a>
+                        <a href="{!! route('cli.create') !!}"><img src="img/funcionario_add.png" title="Novo"><p style="text-align: center; color: black"></p></a>
                     </div>
 
                 </div>
