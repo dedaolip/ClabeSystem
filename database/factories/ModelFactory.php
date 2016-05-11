@@ -54,3 +54,15 @@ $factory->define(App\Cliente::class, function(Faker\Generator $faker) {
         }
     ];
 });
+
+$factory->define(App\Funcionario::class, function(Faker\Generator $faker) {
+    return [
+        'created_at' => $faker->dateTime,
+        'updated_at' => $faker->dateTime,
+        'pessoa_id'  => function() {
+            return factory(App\Pessoa::class)->create()->id;
+        },
+        'cargo_id'  =>$faker->randomElement(['1', '2', '3'])
+    ];
+});
+

@@ -9,7 +9,7 @@
                         <a href="javascript:history.back(-1);" class="btn btn-default btn-sm" data-toggle="tooltip" data-placement="top" title="Voltar">
                             <i class="glyphicon glyphicon-chevron-left"></i>
                         </a>
-                        &nbsp;&nbsp;Adicionar Novo Funcionário
+                        &nbsp;&nbsp;Adicionar Novo Funcionï¿½rio
                     </div>
 
                     <form id="uCustomerForm" action="{!! route('func.update', ['id' => $funcionario->id]) !!}" method="post" class="form-horizontal ng-pristine ng-valid" name="uCustomerForm" role="form">
@@ -42,7 +42,7 @@
                                 <div class="col-lg-6">
                                     <label class="control-label" for="cargo_id">Cargo: </label>
                                     <select class="form-control" name="cargo_id">
-                                        <option value="<?php echo $funcionario->cargo_id;?>">value="<?php echo $funcionario->cargo->nome;?>"</option>
+                                        <option value="<?php echo $funcionario->cargo_id;?>"><?php echo $funcionario->cargo->nome;?></option>
                                         <?php foreach($cargos as $cargo): ?>
                                         <option value="<?php echo $cargo->id?>"><?php echo $cargo->nome?></option>
                                         <?php endforeach;?>
@@ -52,7 +52,7 @@
 
                             <div class="form-group col-lg-12">
                                 <div class="col-lg-5">
-                                    <label class="control-label" for="endereco">Endereço: </label>
+                                    <label class="control-label" for="endereco">Endereï¿½o: </label>
                                     <input class="form-control" type="text" name="endereco" value="<?php echo $funcionario->pessoa->endereco;?>">
                                 </div>
                                 <div class="col-lg-4">
