@@ -31,13 +31,13 @@
                             <?php foreach($veiculos as $veiculo): ?>
                             <tr>
                                 <?php $funcionario = \App\Funcionario::find($veiculo->responsavel_id);?>
-                                <td><?php echo $veiculo->id; ?></td>
-                                <td><?php echo $funcionario->pessoa->nome; ?></td>
-                                <td><?php echo $veiculo->placa; ?></td>
-                                <td><?php echo $veiculo->ano; ?></td>
-                                <td><?php echo $veiculo->registro; ?></td>
-                                <td><?php echo $veiculo->tipo; ?></td>
-                                <td>
+                                <td style="vertical-align: middle"><?php echo $veiculo->id; ?></td>
+                                <td style="vertical-align: middle"><?php echo $funcionario->pessoa->nome; ?></td>
+                                <td style="vertical-align: middle"><?php echo $veiculo->placa; ?></td>
+                                <td style="vertical-align: middle"><?php echo $veiculo->ano; ?></td>
+                                <td style="vertical-align: middle"><?php echo $veiculo->registro; ?></td>
+                                <td style="vertical-align: middle"><?php echo $veiculo->tipo; ?></td>
+                                <td style="vertical-align: middle">
                                     <a href="{!! route('vei.edit', ['id' => $veiculo->id]) !!}"><img src="img/funcionario_edit.png" title="Editar"></a>
                                     <a href="{!! route('vei.destroy', ['id' => $veiculo->id]) !!}"><img src="img/funcionario_delete.png" title="Deletar"></a>
                                 </td>

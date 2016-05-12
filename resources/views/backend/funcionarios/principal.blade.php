@@ -28,11 +28,11 @@
                             <tbody>
                             <?php foreach($funcionarios as $funcionario): ?>
                                 <tr>
-                                    <td><?php echo $funcionario->id ?></td>
-                                    <td><?php echo $funcionario->pessoa->nome ?></td>
-                                    <td><?php echo $funcionario->cargo->nome ?></td>
-                                    <td><?php echo $funcionario->pessoa->fone ?></td>
-                                    <td>
+                                    <td style="vertical-align: middle"><?php echo $funcionario->id ?></td>
+                                    <td style="vertical-align: middle"><?php echo $funcionario->pessoa->nome ?></td>
+                                    <td style="vertical-align: middle"><?php echo $funcionario->cargo->nome ?></td>
+                                    <td style="vertical-align: middle"><?php echo $funcionario->pessoa->fone ?></td>
+                                    <td style="vertical-align: middle">
                                         <a href="{!! route('func.edit', ['id' => $funcionario->id]) !!}"><img src="img/funcionario_edit.png" title="Editar"></a>
                                         <a href="{!! route('func.destroy', ['id' => $funcionario->id]) !!}"><img src="img/funcionario_delete.png" title="Deletar"></a>
                                     </td>

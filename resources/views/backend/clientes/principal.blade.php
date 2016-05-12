@@ -27,10 +27,10 @@
                         <tbody>
                         <?php foreach($clientes as $cliente): ?>
                         <tr>
-                            <td><?php echo $cliente->id;?></td>
-                            <td><?php echo $cliente->pessoa->nome;?></td>
-                            <td><?php echo $cliente->pessoa->fone;?></td>
-                            <td>
+                            <td style="vertical-align: middle"><?php echo $cliente->id;?></td>
+                            <td style="vertical-align: middle"><?php echo $cliente->pessoa->nome;?></td>
+                            <td style="vertical-align: middle"><?php echo $cliente->pessoa->fone;?></td>
+                            <td style="vertical-align: middle">
                                 <a href="{!! route('cli.edit', ['id' => $cliente->id]) !!}"><img src="img/funcionario_edit.png" title="Editar"></a>
                                 <a href="{!! route('cli.destroy', ['id' => $cliente->id]) !!}"><img src="img/funcionario_delete.png" title="Deletar"></a>
                             </td>

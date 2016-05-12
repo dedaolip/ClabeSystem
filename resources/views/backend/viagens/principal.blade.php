@@ -33,15 +33,15 @@
                             <?php foreach($viagens as $viagem): ?>
                                 <?php $motorista = \App\Funcionario::find($viagem->motorista_id);?>
                                 <tr>
-                                    <td><?php echo $viagem->id?></td>
-                                    <td><?php echo $viagem->veiculo->placa?></td>
-                                    <td><?php echo $motorista->pessoa->nome?></td>
-                                    <td><?php echo $viagem->destino?></td>
-                                    <td><?php echo $viagem->origem?></td>
-                                    <td><?php echo $viagem->data_partida?></td>
-                                    <td><?php echo $viagem->tempo?></td>
-                                    <td><?php echo $viagem->data_chegada?></td>
-                                    <td>
+                                    <td style="vertical-align: middle"><?php echo $viagem->id?></td>
+                                    <td style="vertical-align: middle"><?php echo $viagem->veiculo->placa?></td>
+                                    <td style="vertical-align: middle"><?php echo $motorista->pessoa->nome?></td>
+                                    <td style="vertical-align: middle"><?php echo $viagem->destino?></td>
+                                    <td style="vertical-align: middle"><?php echo $viagem->origem?></td>
+                                    <td style="vertical-align: middle"><?php echo $viagem->data_partida?></td>
+                                    <td style="vertical-align: middle"><?php echo $viagem->tempo?></td>
+                                    <td style="vertical-align: middle"><?php echo $viagem->data_chegada?></td>
+                                    <td style="vertical-align: middle">
                                         <a href="{!! route('via.edit', ['id' => $viagem->id]) !!}"><img src="img/funcionario_edit.png" title="Editar"></a>
                                         <a href="{!! route('via.destroy', ['id' => $viagem->id]) !!}"><img src="img/funcionario_delete.png" title="Deletar"></a>
                                     </td>
