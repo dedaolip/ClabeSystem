@@ -40,8 +40,12 @@
 
                     </table>
 
-                    <div class="col-lg-1">
-                        <a href="{!! route('cli.create') !!}"><img src="img/funcionario_add.png" title="Novo"><p style="text-align: center; color: black"></p></a>
+                    <div class="col-lg-10 text-center">
+                    {!! $clientes->render() !!}
+                    </div>
+
+                    <div class="col-lg-10">
+                        <a class="col-lg-10" href="{!! route('cli.create') !!}"><img src="img/funcionario_add.png" title="Novo"><p style="text-align: center; color: black"></p></a>
                     </div>
 
                 </div>

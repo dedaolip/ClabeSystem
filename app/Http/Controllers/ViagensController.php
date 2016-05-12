@@ -19,7 +19,7 @@ class ViagensController extends Controller
 
     public function index()
     {
-        $viagens = Viagem::all();
+        $viagens = Viagem::paginate(10);
         return view('backend.viagens.principal', ['viagens'=>$viagens]);
     }
 

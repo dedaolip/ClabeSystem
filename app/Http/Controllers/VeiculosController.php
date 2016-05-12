@@ -17,7 +17,7 @@ class VeiculosController extends Controller
 
     public function index()
     {
-        $veiculos = Veiculo::all();
+        $veiculos = Veiculo::paginate(10);
         return view('backend.veiculos.principal', ['veiculos' => $veiculos]);
     }
 

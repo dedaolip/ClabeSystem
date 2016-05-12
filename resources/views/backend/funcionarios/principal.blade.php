@@ -42,7 +42,11 @@
 
                         </table>
 
-                        <div class="col-lg-1">
+                        <div class="col-lg-10 text-center">
+                            {!! $funcionarios->render() !!}
+                        </div>
+
+                        <div class="col-lg-10">
                             <a href="{!! route('func.create') !!}"><img src="img/funcionario_add.png" title="Novo"><p style="text-align: center; color: black"></p></a>
                         </div>
 
