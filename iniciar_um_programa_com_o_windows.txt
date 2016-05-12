@@ -1,0 +1,7 @@
+Iniciar/executar
+
+escrever "gpedit.msc" sem aspas...
+Do lado esquerdo ir em "Configurações do Windows" depois em "Scrips (inicialização/encerramento)
+
+Clicar 2 vezes em "Inicializar" clica no botão "Adicionar" na direita e clica em "Procurar" aponta 
+para seu script e pronto, dar ok´s em todas as telas e ver se funcionou...
