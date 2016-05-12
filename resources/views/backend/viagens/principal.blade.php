@@ -3,13 +3,13 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <div class="col-md-12 col-md-offset-1">
+            <div class="col-md-10 col-md-offset-1">
                 <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <a href="javascript:history.back(-1);" class="btn btn-default btn-sm" data-toggle="tooltip" data-placement="top" title="Voltar">
+                    <div class="panel-heading col-lg-12">
+                        <a href="javascript:history.back(-1);" class="btn btn-default btn-sm col-lg-1" data-toggle="tooltip" data-placement="top" title="Voltar">
                             <i class="glyphicon glyphicon-chevron-left"></i>
                         </a>
-                        &nbsp;&nbsp;Viagem
+                        <p class="col-lg-11" style="vertical-align: middle; text-align: center; font-size: 14pt; font-weight: bolder">Viagens</p>
                     </div>
 
                     <div class="panel-body">
