@@ -1,0 +1,7 @@
+Instalação do serviço: No C:/xampp/apache duplo-clique em "apache_installservice.bat".
+Desinstalação do serviço: No C:/xampp/apache duplo-clique em "apache_uninstallservice.bat"
+
+Instalação do serviço: No C:/xampp/mysql duplo-clique em "mysql_installservice.bat".
+Desinstalação do serviço: No C:/xampp/mysql duplo-clique em "mysql_uninstallservice.bat"
+
+C: diretório onde supostamente está instalado. 
