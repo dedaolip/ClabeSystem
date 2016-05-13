@@ -65,6 +65,19 @@ $factory->define(App\Veiculo::class, function(Faker\Generator $faker) {
     ];
 });
 
+$factory->define(App\Viagem::class, function(Faker\Generator $faker) {
+        return [
+        'veiculo_id' => $faker->randomElement(['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', ]),
+        'motorista_id' => $faker->randomElement(['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', ]),
+        'destino' => $faker->randomElement(['Ribeirão Preto', 'São Paulo', 'Poços de Caldas', 'Maceio', 'Santa Catarina', 'Gramado', 'Pirassununga', 'Jardinópolis', 'Furnas', 'Santos']),
+        'origem' => $faker->randomElement(['Ribeirão Preto', 'São Paulo', 'Poços de Caldas', 'Maceio', 'Santa Catarina', 'Gramado', 'Pirassununga', 'Jardinópolis', 'Furnas', 'Santos']),
+        'data_partida' => $faker->dateTime,
+        'data_chegada' => $faker->dateTime,
+        'tempo'=> $faker->randomElement(['1', '2', '3', '4', '5', '1', '2', '3', '4', '1']),
+        'detalhes'  => str_random(10),
+        ];
+});
+
 
 
 $factory->define(App\Funcionario::class, function(Faker\Generator $faker) {
