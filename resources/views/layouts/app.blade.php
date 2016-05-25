@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="icon" type="image/png" href="<?= asset('img/icone.ico'); ?>" />
     <title>ClabeSystem</title>
 
     <!-- Fonts -->
@@ -68,7 +69,7 @@
                                 <?php
                                 if(Auth::user()->id == 1){
                                     echo "<li><a href=\"{{ url('/register') }}\">Registrar</a></li>";
-                                    echo "<li><a href=\"/usuarios\">Usuarios</a></li>";
+                                    echo "<li><a href='".asset('usuarios')."'>Usuarios</a></li>";
                                 }
                                 ?>
                             </ul>

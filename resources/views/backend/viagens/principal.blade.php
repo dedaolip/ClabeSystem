@@ -42,8 +42,8 @@
                                     <td style="vertical-align: middle"><?php echo $viagem->tempo?></td>
                                     <td style="vertical-align: middle"><?php echo $viagem->data_chegada?></td>
                                     <td style="vertical-align: middle">
-                                        <a href="{!! route('via.edit', ['id' => $viagem->id]) !!}"><img src="img/funcionario_edit.png" title="Editar"></a>
-                                        <a href="{!! route('via.destroy', ['id' => $viagem->id]) !!}"><img src="img/funcionario_delete.png" title="Deletar"></a>
+                                        <a href="{!! route('via.edit', ['id' => $viagem->id]) !!}"><img src="<?= asset('img/funcionario_edit.png'); ?>" title="Editar"></a>
+                                        <a href="{!! route('via.destroy', ['id' => $viagem->id]) !!}"><img src="<?= asset('img/funcionario_delete.png'); ?>" title="Deletar"></a>
                                     </td>
                                 </tr>
                             <?php endforeach;?>
@@ -56,7 +56,7 @@
                         </div>
 
                         <div class="col-lg-10">
-                            <a href="{!! route('via.create') !!}"><img src="img/funcionario_add.png" title="Novo"><p style="text-align: center; color: black"></p></a>
+                            <a href="{!! route('via.create') !!}"><img src="<?= asset('img/funcionario_add.png'); ?>" title="Novo"><p style="text-align: center; color: black"></p></a>
                         </div>
 
                     </div>

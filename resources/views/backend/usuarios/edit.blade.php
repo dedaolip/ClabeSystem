@@ -31,7 +31,7 @@
                             <div class="row marBottom13">
                                 <div class="col-lg-4{{ $errors->has('name') ? ' has-error' : '' }}">
                                     <label class="control-label" for="uName">Nome: </label>
-                                    <input class="form-control" type="text" name="name" value ="<?= $user->name; ?>">
+                                    <input class="form-control" type="text" name="name" value ="<?= $user->name; ?>" readonly>
 
                                     @if ($errors->has('name'))
                                         <span class="help-block">
@@ -42,7 +42,7 @@
 
                                 <div class="col-lg-4{{ $errors->has('email') ? ' has-error' : '' }}">
                                     <label class="control-label" for="email">E-mail: </label>
-                                    <input class="form-control" type="text" name="email" value ="<?= $user->email; ?>">
+                                    <input class="form-control" type="text" name="email" value ="<?= $user->email; ?>" readonly>
 
                                     @if ($errors->has('email'))
                                         <span class="help-block">

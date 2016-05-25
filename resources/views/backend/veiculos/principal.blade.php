@@ -38,8 +38,8 @@
                                 <td style="vertical-align: middle"><?php echo $veiculo->registro; ?></td>
                                 <td style="vertical-align: middle"><?php echo $veiculo->tipo; ?></td>
                                 <td style="vertical-align: middle">
-                                    <a href="{!! route('vei.edit', ['id' => $veiculo->id]) !!}"><img src="img/funcionario_edit.png" title="Editar"></a>
-                                    <a href="{!! route('vei.destroy', ['id' => $veiculo->id]) !!}"><img src="img/funcionario_delete.png" title="Deletar"></a>
+                                    <a href="{!! route('vei.edit', ['id' => $veiculo->id]) !!}"><img src="<?= asset('img/funcionario_edit.png'); ?>" title="Editar"></a>
+                                    <a href="{!! route('vei.destroy', ['id' => $veiculo->id]) !!}"><img src="<?= asset('img/funcionario_delete.png'); ?>" title="Deletar"></a>
                                 </td>
                             </tr>
                             <?php endforeach; ?>
@@ -52,7 +52,7 @@
                         </div>
 
                         <div class="col-lg-10">
-                            <a href="{!! route('vei.create') !!}"><img src="img/funcionario_add.png" title="Novo"><p style="text-align: center; color: black"></p></a>
+                            <a href="{!! route('vei.create') !!}"><img src="<?= asset('img/funcionario_add.png'); ?>" title="Novo"><p style="text-align: center; color: black"></p></a>
                         </div>
 
                     </div>

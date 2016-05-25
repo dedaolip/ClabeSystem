@@ -31,8 +31,8 @@
                             <td style="vertical-align: middle"><?php echo $cliente->pessoa->nome;?></td>
                             <td style="vertical-align: middle"><?php echo $cliente->pessoa->fone;?></td>
                             <td style="vertical-align: middle">
-                                <a href="{!! route('cli.edit', ['id' => $cliente->id]) !!}"><img src="img/funcionario_edit.png" title="Editar"></a>
-                                <a href="{!! route('cli.destroy', ['id' => $cliente->id]) !!}"><img src="img/funcionario_delete.png" title="Deletar"></a>
+                                <a href="{!! route('cli.edit', ['id' => $cliente->id]) !!}"><img src="<?= asset('img/funcionario_edit.png'); ?>" title="Editar"></a>
+                                <a href="{!! route('cli.destroy', ['id' => $cliente->id]) !!}"><img src="<?= asset('img/funcionario_delete.png'); ?>" title="Deletar"></a>
                             </td>
                         </tr>
                         <?php endforeach;?>
@@ -45,7 +45,7 @@
                     </div>
 
                     <div class="col-lg-10">
-                        <a class="col-lg-10" href="{!! route('cli.create') !!}"><img src="img/funcionario_add.png" title="Novo"><p style="text-align: center; color: black"></p></a>
+                        <a class="col-lg-10" href="{!! route('cli.create') !!}"><img src="<?= asset('img/funcionario_add.png'); ?>" title="Novo"><p style="text-align: center; color: black"></p></a>
                     </div>
 
                 </div>
