@@ -19,6 +19,9 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 
+Route::group(['prefix' => 'usuarios'], function() {
+    Route::get('',                  ['as' => 'user.index',  'uses' => 'UserController@index']);
+});
 
 Route::group(['prefix' => 'funcionarios'], function() {
     Route::get('',					['as' => 'func.index',	'uses' => 'FuncionariosController@index']);
@@ -57,3 +60,11 @@ Route::group(['prefix' => 'viagens'], function() {
 });
 
 
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
