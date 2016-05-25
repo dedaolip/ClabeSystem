@@ -65,6 +65,12 @@
 
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
+                                <?php
+                                if(Auth::user()->id == 1){
+                                    echo "<li><a href=\"{{ url('/register') }}\">Registrar</a></li>";
+                                    echo "<li><a href=\"/usuarios\">Usuarios</a></li>";
+                                }
+                                ?>
                             </ul>
                         </li>
                     @endif
