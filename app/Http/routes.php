@@ -21,6 +21,10 @@ Route::get('/home', 'HomeController@index');
 
 Route::group(['prefix' => 'usuarios'], function() {
     Route::get('',                  ['as' => 'user.index',  'uses' => 'UserController@index']);
+    Route::get('create',            ['as' => 'user.create', 'uses' => 'UserController@create']);
+    Route::post('store',            ['as' => 'user.store',  'uses' => 'UserController@store']);
+    Route::get('{id}/edit',         ['as' => 'user.edit',   'uses' => 'UserController@edit']);
+    Route::put('update/{users}',    ['as' => 'user.update', 'uses' => 'UserController@update']);
 });
 
 Route::group(['prefix' => 'funcionarios'], function() {

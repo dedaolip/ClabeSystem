@@ -31,7 +31,7 @@
                                 <td style="vertical-align: middle"><?php echo $user->name;?></td>
                                 <td style="vertical-align: middle"><?php echo $user->email;?></td>
                                 <td style="vertical-align: middle">
-                                    <a><img src="img/funcionario_edit.png" title="Editar"></a>
+                                    <a href="{!! route('user.edit', ['id' => $user->id]) !!}"><img src="img/funcionario_edit.png" title="Editar"></a>
                                     <a><img src="img/funcionario_delete.png" title="Deletar"></a>
                                 </td>
                             </tr>
@@ -45,7 +45,7 @@
                         </div>
 
                         <div class="col-lg-10">
-                            <a class="col-lg-10"><img src="img/funcionario_add.png" title="Novo"><p style="text-align: center; color: black"></p></a>
+                            <a href="{!! route('user.create') !!}" class="col-lg-10"><img src="img/funcionario_add.png" title="Novo"><p style="text-align: center; color: black"></p></a>
                         </div>
 
                     </div>
