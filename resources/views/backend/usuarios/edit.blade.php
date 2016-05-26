@@ -9,7 +9,7 @@
                         <a href="javascript:history.back(-1);" class="btn btn-default btn-sm" data-toggle="tooltip" data-placement="top" title="Voltar">
                             <i class="glyphicon glyphicon-chevron-left"></i>
                         </a>
-                        &nbsp;&nbsp;Editar Usu·rios
+                        &nbsp;&nbsp;Editar Usu√°rios
                     </div>
 
                     <div class="panel-body">

@@ -20,7 +20,9 @@
                                 <th>Id</th>
                                 <th>Name</th>
                                 <th>e-mail</th>
-                                <th>Ação</th>
+                                @if(Auth::user()->id==1)
+                                <th>AÃ§Ã£o</th>
+                                @endif
                             </tr>
                             </thead>
 
@@ -30,10 +32,11 @@
                                 <td style="vertical-align: middle"><?php echo $user->id;?></td>
                                 <td style="vertical-align: middle"><?php echo $user->name;?></td>
                                 <td style="vertical-align: middle"><?php echo $user->email;?></td>
+                                @if(Auth::user()->id==1)
                                 <td style="vertical-align: middle">
                                     <a href="{!! route('user.edit', ['id' => $user->id]) !!}"><img src="<?= asset('img/funcionario_edit.png'); ?>" title="Editar"></a>
-                                    <a><img src="<?= asset('img/funcionario_delete.png'); ?>" title="Deletar"></a>
                                 </td>
+                                @endif
                             </tr>
                             <?php endforeach;?>
                             </tbody>
@@ -45,7 +48,15 @@
                         </div>
 
                         <div class="col-lg-10">
-                            <a href="{!! route('user.create') !!}" class="col-lg-10"><img src="<?= asset('img/funcionario_add.png'); ?>" title="Novo"><p style="text-align: center; color: black"></p></a>
+                            <?php
+                            if(Auth::user()->id == 1){
+                                echo "<a href=\"usuarios/create\" class=\"col-lg-10\"><img src=".asset('img/funcionario_add.png')." title=\"Novo\"><p style=\"text-align: center; color: black\"></p></a>";
+                            }
+                            ?>
+
+
+
+                            <!--   <a href="{!! route('user.create') !!}" class="col-lg-10"><img src="<?= asset('img/funcionario_add.png'); ?>" title="Novo"><p style="text-align: center; color: black"></p></a>-->
                         </div>
 
                     </div>
